@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+                   <!---------------------------HOME-page  SECTION------------------->
+
+    <div class="header">
+        <div class="container">
+            <nav class="navbar">
+            <img src="logo.png" id="misto">
+
+<ul id="sidemenue">
+    <li ><a href="#">Home</a></li>
+    <li ><a href="#menu">Menu</a></li>
+    <li ><a href="#cart">Cart</a></li>
+    <li ><a href="#checkout">Contact us</a></li>        
+        
+<i class="fas fa-times"onclick="closemenue()"></i>
+</ul>
+  <i class="fas fa-bars" onclick="openmenue()"></i>
+</nav>
+
+    <div class="header-content">
+            <img src="imges/bg.png" class="bg1">
+
+        <div class="header-text">
+            <p><span>Discover tandoori warmth & fresh flavors with</span> MISTO:)</p>
+  <h1 class="glow-text">
+    <span>Order</span>
+    <span>your</span>
+    <span>favorite</span>
+    <span>dishes</span>
+    <span>online</span>
+    <span>and</span>
+    <span>enjoy</span>
+    <span>a</span>
+    <span>culinary</span>
+    <span>experience</span>
+    <span>at</span>
+    <span>home!!!</span>
+  </h1>
+  <div class="search">
+          <input id="search" class="input" placeholder="Biryani,Tandoori-chicken" />
+          <button class="btnSearch" >Search</button>
+        </div>
+ </div>
+ <div class="header-img">      
+            <img src="imges/bg1.png" class="bg">
+        </div>
+        
+    </div>
+    </div>
+        </div>
+    </div>
+    <!----------------------------MENU PAGE------------------------------------------->
+<section id="menu">
+  <h2> MENU</h2>
+  <div class="menu-container">
+
+    <!-- 1 -->
+    <div class="menu-item">
+      <img src="imges/item1.jpg" alt="Burger">
+      <h3>Cheese Burger</h3>
+      <p>Juicy grilled burger with cheese.</p>
+      <span class="price" data-price="8.99">$8.99</span>
+      <button onclick="addToCart('Cheese Burger', 8.99)">Add to Cart</button>
+    </div>
+
+    <!-- 2 -->
+    <div class="menu-item">
+      <img src="imges/item2.jpg" alt="Pizza">
+      <h3>Margherita Pizza</h3>
+      <p>Classic Italian with fresh cheese.</p>
+      <span class="price" data-price="12.99">$12.99</span>
+      <button onclick="addToCart('Margherita Pizza', 12.99)">Add to Cart</button>
+    </div>
+
+    <!-- 3 -->
+    <div class="menu-item">
+      <img src="imges/item3.jpg" alt="Pasta">
+      <h3>Alfredo Pasta</h3>
+      <p>Creamy pasta with mushrooms.</p>
+      <span class="price" data-price="10.50">$10.50</span>
+      <button onclick="addToCart('Alfredo Pasta', 10.50)">Add to Cart</button>
+    </div>
+
+    <!-- 4 -->
+    <div class="menu-item">
+      <img src="imges/bg1.png" alt="Tandoori Chicken">
+      <h3>Tandoori Chicken</h3>
+      <p>Smoky, spicy and full of flavors.</p>
+      <span class="price" data-price="14.50">$14.50</span>
+      <button onclick="addToCart('Tandoori Chicken', 14.50)">Add to Cart</button>
+    </div>
+
+    <!-- 5 -->
+    <div class="menu-item">
+      <img src="imges/item5.jpg" alt="Tandoori Naan">
+      <h3>Tandoori Naan</h3>
+      <p>Soft bread baked in a clay oven.</p>
+      <span class="price" data-price="3.99">$3.99</span>
+      <button onclick="addToCart('Tandoori Naan', 3.99)">Add to Cart</button>
+    </div>
+
+    <!-- 6 -->
+    <div class="menu-item">
+      <img src="imges/item6.jpg" alt="Tandoori Wrap">
+      <h3>Tandoori Wrap</h3>
+      <p>Chicken wrap with smoky spices.</p>
+      <span class="price" data-price="7.99">$7.99</span>
+      <button onclick="addToCart('Tandoori Wrap', 7.99)">Add to Cart</button>
+    </div>
+
+    <!-- 7 -->
+    <div class="menu-item">
+      <img src="imges/item7.jpg" alt="Tandoori Wings">
+      <h3>Tandoori Wings</h3>
+      <p>Crispy wings tossed in spicy masala.</p>
+      <span class="price" data-price="9.50">$9.50</span>
+      <button onclick="addToCart('Tandoori Wings', 9.50)">Add to Cart</button>
+    </div>
+
+    <!-- 8 -->
+    <div class="menu-item">
+      <img src="imges/item8.jpg" alt="Seekh Kebab">
+      <h3>Seekh Kebab</h3>
+      <p>Spiced minced meat grilled on skewers.</p>
+      <span class="price" data-price="13.50">$13.50</span>
+      <button onclick="addToCart('Seekh Kebab', 13.50)">Add to Cart</button>
+    </div>
+
+    <!-- 9 -->
+    <div class="menu-item">
+      <img src="imges/item9.jpg" alt="Biryani">
+      <h3>Chicken Biryani</h3>
+      <p>Aromatic rice with tender chicken.</p>
+      <span class="price" data-price="12.50">$12.50</span>
+      <button onclick="addToCart('Chicken Biryani', 12.50)">Add to Cart</button>
+    </div>
+
+    <!-- 10 -->
+    <div class="menu-item">
+      <img src="imges/item10.jpg" alt="Lemonade">
+      <h3>Fresh Lemonade</h3>
+      <p>Cool and tangy lemonade.</p>
+      <span class="price" data-price="3.50">$3.50</span>
+      <button onclick="addToCart('Fresh Lemonade', 3.50)">Add to Cart</button>
+    </div>
+
+    <!-- 11 -->
+    <div class="menu-item">
+      <img src="imges/item11.jpg" alt="Gulab Jamun">
+      <h3>Gulab Jamun</h3>
+      <p>Sweet fried dumplings in syrup.</p>
+      <span class="price" data-price="5.50">$5.50</span>
+      <button onclick="addToCart('Gulab Jamun', 5.50)">Add to Cart</button>
+    </div>
+
+  </div>
+
+  <button id="showMoreBtn">Show More</button>
+</section>
+
+<!-- Cart Section -->
+ <section id="cart">
+<div class="cart-container">
+  <h2>CART🛒</h2>
+  <table id="cart-table">
+    <thead>
+      <tr>
+        <th>Dish</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th>Remove</th>
+
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <h2 id="grand-total">Grand Total: $0</h2>
+  <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+</div>
+</section>
+
+ <div class="checkout-container">
+
+  <div class="order-summary" id="checkout-summary">
+    <h2>PLACE ORDER!!</h2>
+  </div>
+
+  <!-- Customer Details Form -->
+  <form id="checkout-form">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="text" id="address" placeholder="Delivery Address" required>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+    <select id="payment" required>
+      <option value="">Select Payment Method</option>
+      <option value="Cash on Delivery">Cash on Delivery</option>
+      <option value="Card Payment">Card Payment</option>
+    </select>
+    <button type="submit" class="btn2">Place Order</button>
+  </form>
+
+  <p class="success-msg" id="success-msg"></p>
+</div>
+
+
+<section id="about" class="about-container">
+
+  <!-- Hero / Intro -->
+  <div class="about-hero">
+    <h2>Welcome to MISTO :)</h2>
+    <p>Authentic Tandoori Flavors. Exceptional Culinary Experience.</p>
+  </div>
+
+  <!-- Story -->
+  <div class="about-story">
+    <h3>Our Story</h3>
+    <p>
+      MISTO started with a small passion for authentic Indian and Pakistani flavors. 
+      Over the years, we grew into a brand loved by food enthusiasts. From sizzling tandoori chicken to aromatic biryani, 
+      we pride ourselves on delivering quality and freshness in every dish.
+    </p>
+  </div>
+
+  <!-- Values -->
+  <div class="about-values">
+    <h3>Why Choose Us</h3>
+    <ul>
+      <li>Fresh Ingredients & Quality Standards</li>
+      <li>Authentic Recipes & Traditional Cooking</li>
+      <li>Fast Delivery & Easy Online Ordering</li>
+      <li>Exceptional Customer Service</li>
+    </ul>
+  </div>
+
+  <!-- Gallery / Food Highlights -->
+  <div class="about-gallery">
+    <h3>Our Specialties</h3>
+    <div class="gallery-items">
+      <img src="imges/item1.jpg" alt="Cheese Burger">
+      <img src="imges/item2.jpg" alt="Pizza">
+      <img src="imges/bg1.png" alt="Tandoori Chicken">
+    </div>
+  </div>
+
+  <!-- Contact Info -->
+  <div class="about-contact">
+    <h3>Contact Us</h3>
+    <p>Email: info@misto.com | Phone: +92 300 1234567</p>
+  </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 MISTO | Made by @Kashaf parveen:)</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----Menu button-->
+<script>
+const menu = document.querySelector('nav ul');
+const openBtn = document.querySelector('nav .fa-bars');
+const closeBtn = document.querySelector('nav ul .fa-times');
+
+openBtn.addEventListener('click', () => {
+    menu.classList.add('show');
+});
+
+closeBtn.addEventListener('click', () => {
+    menu.classList.remove('show');
+});
+</script>
+
+<!----show more button-->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".menu-item");
+  const showMoreBtn = document.getElementById("showMoreBtn");
+
+  let visibleCount = 6; 
+
+  for (let i = 0; i < visibleCount; i++) {
+    items[i].classList.add("visible");
+  }
+  showMoreBtn.addEventListener("click", function () {
+    for (let i = visibleCount; i < visibleCount + 3 && i < items.length; i++) {
+      items[i].classList.add("visible");
+    }
+    visibleCount += 3;
+    if (visibleCount >= items.length) {
+      showMoreBtn.style.display = "none";
+    }
+  });
+});
+</script>
+
+<!----Dish search krny k liye button-->
+
+<script>
+  const searchInput = document.getElementById("search");
+  const searchBtn = document.querySelector(".btnSearch");
+  const menuItems = document.querySelectorAll(".menu-item");
+function filterMenu() {
+  const query = searchInput.value.toLowerCase();
+  let firstMatch = null;
+
+  menuItems.forEach(item => {
+    const dishName = item.querySelector("h3").textContent.toLowerCase();
+    const dishDesc = item.querySelector("p").textContent.toLowerCase();
+
+    if (dishName.includes(query) || dishDesc.includes(query)) {
+      item.style.display = "block"; 
+      if (!firstMatch) firstMatch = item; 
+    } else {
+      item.style.display = "none"; 
+    }
+  });
+
+  if (firstMatch) {
+    firstMatch.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+}
+
+
+  // 🔍 Search on button click
+  searchBtn.addEventListener("click", filterMenu);
+
+  // 🔍 Also filter live while typing
+
+
+searchInput.addEventListener("keyup", filterMenu);
+</script>
+
+<script>
+  // Initialize cart from localStorage or empty array
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+// Add item to cart
+function addToCart(name, price) {
+    // Check if item already exists
+    const existingItem = cart.find(item => item.name === name);
+    if (existingItem) {
+        existingItem.quantity += 1; // Increase quantity
+        existingItem.total = existingItem.price * existingItem.quantity;
+    } else {
+        cart.push({ name: name, price: price, quantity: 1, total: price });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    renderCart(); // Update UI immediately
+}
+
+// Render cart table
+function renderCart() {
+    const tbody = document.querySelector("#cart-table tbody");
+    tbody.innerHTML = ""; // Clear previous rows
+
+    if(cart.length === 0){
+        tbody.innerHTML = `<tr><td colspan="5" style="text-align:center;">Your cart is empty</td></tr>`;
+        document.getElementById("grand-total").textContent = `Grand Total: $0`;
+        return;
+    }
+
+    let grandTotal = 0;
+
+    cart.forEach((item, index) => {
+        const row = document.createElement("tr");
+
+        row.innerHTML = `
+            <td>${item.name}</td>
+            <td>$${item.price.toFixed(2)}</td>
+            <td>${item.quantity}</td>
+            <td>$${item.total.toFixed(2)}</td>
+            <td><button onclick="removeFromCart(${index})">Remove</button></td>
+        `;
+
+        tbody.appendChild(row);
+        grandTotal += item.total;
+    });
+
+    document.getElementById("grand-total").textContent = `Grand Total: $${grandTotal.toFixed(2)}`;
+}
+
+// Remove item from cart
+function removeFromCart(index) {
+    cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    renderCart();
+}
+
+
+
+</script>
+<script>
+
+// Checkout button click → scroll to checkout section
+function checkout() {
+    if(cart.length === 0) {
+        alert("Your cart is empty!");
+        return;
+    }
+
+    const checkoutSection = document.querySelector(".checkout-container");
+
+    // Show checkout section
+    checkoutSection.style.display = "block";
+
+    // Scroll smoothly to checkout section
+    setTimeout(() => {
+        checkoutSection.scrollIntoView({ behavior: "smooth" });
+    }, 50);
+}
+
+// Handle Place Order form submit
+document.getElementById("checkout-form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    // Show success message
+    document.getElementById("success-msg").textContent =
+        "✅ Your order will be delivered in 35 minutes!";
+
+    // Clear cart
+    cart = [];
+    localStorage.removeItem("cart");
+    renderCart(); // Make sure renderCart() is defined
+
+    // Reset form
+    this.reset();
+
+    // Optional: scroll back to top (home) after order
+    const homeSection = document.getElementById("home");
+    if(homeSection) {
+        homeSection.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Optional: hide checkout section again
+    // document.querySelector(".checkout-container").style.display = "none";
+});
+
+
+
+
+</script>
+
+</body>
+</html>
