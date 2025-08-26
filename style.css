@@ -799,7 +799,7 @@ nav ul .fas {
   .bg1 {
     width: 80px;
     height: 80px;
-    top: 62%;
+    top: 60%;
     left: 38%;
     transform-origin: -120px 0;
     animation: rotate 3s linear infinite;
@@ -886,5 +886,6 @@ th, td {
 
 
   }
+
 
 
