@@ -636,7 +636,7 @@ nav ul {
     top: 0;
     right: -150px; 
     width: 130px;
-    height: 30vh;  
+    height: 32vh;  
     padding-top: 40px;
     z-index: 1000;
     transition: right 0.3s ease;
@@ -799,7 +799,7 @@ nav ul .fas {
   .bg1 {
     width: 80px;
     height: 80px;
-    top: 53%;
+    top: 58%;
     left: 38%;
     transform-origin: -120px 0;
     animation: rotate 3s linear infinite;
@@ -886,3 +886,4 @@ th, td {
 
 
   }
+
